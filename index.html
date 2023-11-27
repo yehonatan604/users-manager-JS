@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול משתמשים JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-register">
+
+        <div class="register-text">
+            <h2>הרשמה</h2>
+            <p>להרשמה למערכת יש למלא את הפרטים</p>
+        </div>
+
+        <form id="regForm" class="register-form">
+            <div class="form-control">
+                <label for="fname">שם פרטי</label>
+                <input type="text" name="fname" id="fname" required>
+            </div>
+
+            <div class="form-control">
+                <label for="lname">שם משפחה</label>
+                <input type="text" name="lname" id="lname" required>
+            </div>
+
+            <div class="form-control">
+                <label for="email">אימייל</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-control">
+                <label for="password">סיסמה</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <div class="form-control">
+                <input type="submit" class="btn btn-primary" id="submitBtn" value="הרשמה">
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container-login">
+
+        <div class="login-text">
+            <h2>התחברות</h2>
+            <p>להתחברות למערכת יש למלא את הפרטים</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+            <div class="form-control">
+                <label for="login-email">אימייל</label>
+                <input type="email" name="login-email" id="login-email" required>
+            </div>
+
+            <div class="form-control">
+                <label for="login-password">סיסמה</label>
+                <input type="password" name="login-password" id="login-password" required>
+            </div>
+
+            <div class="form-control">
+                <input type="submit" class="btn btn-primary" id="login-submitBtn" value="התחברות">
+            </div>
+        </form>
+    </div>
+
+    <div class="container-users-list">
+        <div class="users-list-text">
+            <h2>רשימת משתמשים</h2>
+        </div>
+
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>שם פרטי</th>
+                    <th>שם משפחה</th>
+                    <th>אימייל</th>
+                    <th>סיסמה</th>
+                    <th>סטטוס</th>
+                    <th>פעולות</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Content from js -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- scripts -->
+    <script src="./scripts/data/users.js"></script>
+
+    <script src="./scripts/services/dom.service.js"></script>
+    <script src="./scripts/services/table.service.js"></script>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

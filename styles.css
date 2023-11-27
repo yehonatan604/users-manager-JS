@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.container-register,
+.container-login {
+    background-color: rgb(216, 220, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.container-login {
+    background-color: whitesmoke;
+}
+
+.register-text,
+.login-text,
+.users-list-text {
+    margin: 2em;
+    margin-top: 3em;
+}
+
+.register-form,
+.login-form {
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1em;
+}
+
+
+.container-users-list {
+    background-color: white;
+    width: 100vw;
+}
+
+input {
+    border: 0;
+    height: 30px;
+    border-bottom: 2px solid gray;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 2em;
+}
+
+h2,
+thead>tr {
+    color: rgb(18, 18, 114);
+}
+
+tr {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+th {
+    background-color: #dddddd;
+    padding: 8px;
+}
+
+thead>tr {
+    border: 0;
+}
+
+td {
+    vertical-align: center;
+    padding: 8px;
+    color: black;
+}
+
+
+.btn {
+    border: 0;
+    padding: 0 1em;
+    margin: 0 1em;
+    margin-top: auto;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: rgb(10, 10, 63);
+    color: aliceblue;
+}
+
+.btn-warning {
+    background-color: rgb(216, 216, 52);
+    width: 70px;
+    padding: .3em;
+}
+
+.btn-danger {
+    background-color: rgb(216, 52, 52);
+    width: 70px;
+    padding: .3em;
+}
+
+.btn-info {
+    background-color: rgb(52, 142, 216);
+    width: 70px;
+    padding: .3em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .7;
+}
